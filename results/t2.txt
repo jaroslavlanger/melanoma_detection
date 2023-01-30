@@ -1,0 +1,51 @@
+iterations=5
+samples=10000
+side=32
+grayscale=True
+equalize=True
+groups=6
+group_weights=[0.2688, 0.0852, 0.0955, 0.1, 0.1018, 0.3487]
+group_bins=20
+orientations=8
+INFO:root:Extracting WLD from images
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10000/10000 [01:02<00:00, 160.86it/s]
+INFO:root:---------- TEST SIZE 0.3, TRAIN SIZE 0.7 ---------
+INFO:root:09:53:57, round 0, class ('KNN', '1')
+INFO:root:09:56:55, round 1, class ('KNN', '1')
+INFO:root:09:59:53, round 2, class ('KNN', '1')
+INFO:root:10:02:49, round 3, class ('KNN', '1')
+INFO:root:10:05:43, round 4, class ('KNN', '1')
+INFO:root:[{'test_size': 0.3, 'metric': 'BA', ('KNN', '1'): '0.5(+-1.1e-04)'}, {'test_size': 0.3, 'metric': 'TN', ('KNN', '1'): '2.9e+03(+-5.6e+01)'}, {'test_size': 0.3, 'metric': 'FP', ('KNN', '1'): '4.6e+01(+-1.1e+02)'}, {'test_size': 0.3, 'metric': 'FN', ('KNN', '1'): '5.3e+01(+-5.4e+01)'}, {'test_size': 0.3, 'metric': 'TP', ('KNN', '1'): '1.2(+-1.2e+00)'}]
+INFO:root:---------- TEST SIZE 0.5, TRAIN SIZE 0.5 ---------
+INFO:root:10:08:38, round 0, class ('KNN', '1')
+INFO:root:10:11:52, round 1, class ('KNN', '1')
+INFO:root:10:14:47, round 2, class ('KNN', '1')
+INFO:root:10:18:00, round 3, class ('KNN', '1')
+INFO:root:10:21:14, round 4, class ('KNN', '1')
+INFO:root:[{'test_size': 0.5, 'metric': 'BA', ('KNN', '1'): '0.5(+-3.8e-05)'}, {'test_size': 0.5, 'metric': 'TN', ('KNN', '1'): '4.8e+03(+-1.1e+02)'}, {'test_size': 0.5, 'metric': 'FP', ('KNN', '1'): '6.9e+01(+-2.1e+02)'}, {'test_size': 0.5, 'metric': 'FN', ('KNN', '1'): '9.1e+01(+-8.4e+01)'}, {'test_size': 0.5, 'metric': 'TP', ('KNN', '1'): '1.4(+-1.3e+00)'}]
+INFO:root:---------- TEST SIZE 0.7, TRAIN SIZE 0.30000000000000004 ---------
+INFO:root:10:24:41, round 0, class ('KNN', '1')
+INFO:root:10:27:48, round 1, class ('KNN', '1')
+INFO:root:10:31:03, round 2, class ('KNN', '1')
+INFO:root:10:34:22, round 3, class ('KNN', '1')
+INFO:root:10:37:39, round 4, class ('KNN', '1')
+INFO:root:[{'test_size': 0.7, 'metric': 'BA', ('KNN', '1'): '0.5(+-3.1e-05)'}, {'test_size': 0.7, 'metric': 'TN', ('KNN', '1'): '6.8e+03(+-5.3e+02)'}, {'test_size': 0.7, 'metric': 'FP', ('KNN', '1'): '1e+02(+-8.7e+02)'}, {'test_size': 0.7, 'metric': 'FN', ('KNN', '1'): '1.2e+02(+-8.0e+01)'}, {'test_size': 0.7, 'metric': 'TP', ('KNN', '1'): '2.4(+-2.8e+00)'}]
+,,KNN
+,,1
+test_size,metric,
+0.3,BA,0.5(+-1.1e-04)
+0.3,TN,2.9e+03(+-5.6e+01)
+0.3,FP,4.6e+01(+-1.1e+02)
+0.3,FN,5.3e+01(+-5.4e+01)
+0.3,TP,1.2(+-1.2e+00)
+0.5,BA,0.5(+-3.8e-05)
+0.5,TN,4.8e+03(+-1.1e+02)
+0.5,FP,6.9e+01(+-2.1e+02)
+0.5,FN,9.1e+01(+-8.4e+01)
+0.5,TP,1.4(+-1.3e+00)
+0.7,BA,0.5(+-3.1e-05)
+0.7,TN,6.8e+03(+-5.3e+02)
+0.7,FP,1e+02(+-8.7e+02)
+0.7,FN,1.2e+02(+-8.0e+01)
+0.7,TP,2.4(+-2.8e+00)
+
