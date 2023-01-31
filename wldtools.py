@@ -16,6 +16,8 @@ from sklearn.metrics import confusion_matrix
 from scipy import signal
 import tqdm
 
+# IMAGES_PATH = './data/train'
+IMAGES_PATH = './data/train_512'
 WEIGHTS_PAPER = [0.2688, 0.0852, 0.0955, 0.1000, 0.1018, 0.3487]
 
 logging.basicConfig(
@@ -25,8 +27,7 @@ logging.basicConfig(
 
 
 def get_image_path(name):
-    return f'./data/train_512/{name}.jpg'
-    # return f'./data/train/{name}.jpg'
+    return f'{IMAGES_PATH}/{name}.jpg'
 
 def get_image(name):
     return skimage.io.imread(get_image_path(name))

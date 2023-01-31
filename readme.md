@@ -24,6 +24,24 @@ pip3 install jupyterlab
 jupyter lab
 ```
 
+Data
+----
+
+*The images are not part of this repository!* In order to run the code, follow:
+```sh
+mkdir -p data/train
+curl https://isic-challenge-data.s3.amazonaws.com/2020/ISIC_2020_Training_JPEG.zip -o data/train/images.zip
+curl https://isic-challenge-data.s3.amazonaws.com/2020/ISIC_2020_Training_GroundTruth.csv  -o data/ISIC_2020_Training_GroundTruth.csv
+cd data/train
+unzip images.zip
+```
+
+Then change `IMAGES_PATH` constant at the top of the `wldtools.py` file.
+
+In order to save some time with repeated loading I preprocessed the images with `./scripts/image_loader.py`.
+So all the images became square and 512x512 pixels, then I saved them into `./data/train_512`.
+You can do it as well, but all should work fine without it, just likely a little slower.
+
 Report
 ------
 
